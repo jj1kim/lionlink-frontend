@@ -8,5 +8,5 @@ export const auth = {
 export const previews = {
   list: () => instanceWithToken.get('/previews/'),
   detail: (id) => instanceWithToken.get(`/previews/${id}/`),
-  create: (url) => instanceWithToken.post('/previews/', { url }),
+  create: (data) => instanceWithToken.post('/previews/', data),
 };
